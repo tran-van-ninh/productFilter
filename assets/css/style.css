@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+html{
+    /* font-size: 62.5%;
+    line-height: 1.6rem; */
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #dadada;
+    overflow: hidden;
+}
+
+h1{
+    margin: 20px;
+    font-weight: 600;
+}
+
+.container{
+    width: 400px;
+    max-width: 100%;
+    background-color: white;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+.products{
+    overflow-y: scroll;
+    min-height: 20vh;
+    max-height: 50vh;
+}
+
+.search{
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.search i{
+    color: #333;
+    padding: 5px;
+}
+
+.search input{
+    flex: 1;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product{
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product .wrap-image{
+    width: 80px;
+    height: 80px;
+    
+    object-fit:contain;
+    border: 1px solid black;
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.product .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 0 10px;
+}
+
+.product .name{
+    display: -webkit-box;           /* Sử dụng flexbox ẩn cho webkit */
+    -webkit-box-orient: vertical;   /* Thiết lập hướng box thành vertical */
+    -webkit-line-clamp: 2;          /* Hiển thị tối đa 2 dòng */
+    overflow: hidden;               /* Ẩn phần vượt quá */
+    text-overflow: ellipsis;        /* Thêm dấu ba chấm */
+    line-height: 20px;               /* Thiết lập khoảng cách giữa các dòng */
+    max-height: 40px;                /* Chiều cao tối đa của 2 dòng, 3em = 1.5 * 2 */
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.product .price{
+    width: 100%;
+    height: 20px;
+}
+
+.product:hover{
+    background-color: #dadada;
+}
+
+.hidden{
+    display: none;
+}
